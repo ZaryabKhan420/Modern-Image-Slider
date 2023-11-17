@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: brittanySignature;
+    src: url(./BrittanySignature-MaZx.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #292929;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#header{
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.logo > h1{
+    font-size: 3rem;
+    font-family: brittanySignature;
+    font-weight: 100;
+}
+
+.logo > h1 > span{
+    font-family: brittanySignature;
+    font-weight: 600;
+}
+
+.navbar-list{
+    gap: 2rem;
+}
+
+.primary-button{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid white;
+    border-radius: 50rem;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.primary-button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.line{
+    margin: 1rem 5vw 0 5vw;
+    height: 1px;
+    opacity: .5;
+}
+
+
+.content{
+    min-height: 88vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.content > h1{
+    font-size: 8rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#slider{
+    width: 100%;
+    height: 50vh;
+    margin-top: -3rem;
+}
+
+.swiper {
+    width: 30rem;
+    height: 40rem;
+    align-self: flex-start;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    overflow: hidden;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.secondary-button{
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 15vw;
+}
+
+.secondary-button-01::after{
+    content: "";
+    position: absolute;
+    left: 170%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 1px;
+    width: 2.5rem;
+    background-color: #fff;
+    color: #fff;
+}
+
+.secondary-button-02::after{
+    content: "";
+    position: absolute;
+    left: -70%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 1px;
+    width: 2.5rem;
+    background-color: #fff;
+    color: #fff;
+}
+
+@media (max-width:1000px) {
+
+    html{
+        font-size: 56.25%;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .content > h1{
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    html{
+        font-size: 48%;
+    }
+
+    .content > h1{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    #slider{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .swiper{
+        order: -1;
+    }
+
+}
+
+@media (max-width:350px) {
+
+    html{
+        font-size: 42%;
+    }
+
+    .content > h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    #slider{
+        margin-top: 7rem;
+    }
+}
